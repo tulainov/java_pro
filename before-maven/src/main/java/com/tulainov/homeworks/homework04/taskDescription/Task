@@ -1,0 +1,6 @@
+Create classes Dog and Cat, that are extending class Animal.
+All of the animals can swim and run.
+Dog's running limit is 500 meter, cat's running limit is 200 meter.
+Cats can't swim!
+
+Count the number of created animals.
