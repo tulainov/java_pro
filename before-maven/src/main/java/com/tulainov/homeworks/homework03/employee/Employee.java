@@ -22,18 +22,6 @@ public class Employee {
         return name;
     }
 
-    public String getWorkPosition() {
-        return workPosition;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
     public int getAge() {
         return age;
     }
