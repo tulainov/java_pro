@@ -1,0 +1,10 @@
+Create a class Employee with the fields name, position, email, number, age
+Constructor of the class should fill this fields. Provide encapsulation of the internal properties of the class.
+
+Create class Car with the method start().
+start() should call:
+-startElectricity()
+-startCommand()
+-startFuelSystem()
+
+These three methods should be private.
