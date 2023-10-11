@@ -45,8 +45,8 @@ public class HomeworkApp {
         System.out.println("The homework 6 is done!");
     }
 
-    public static void printThreeWords() {
-        System.out.println("Orange.\n\nBanana.\n\nApple.");
+    public static String printThreeWords() {
+        return "Orange\n\nBanana\n\nApple";
     }
 
     public static String checkSumSign() {
@@ -62,9 +62,9 @@ public class HomeworkApp {
         int sum = firstNumber + secondNumber;
 
         if(sum >= 0) {
-            return "The sum is positive or 0";
+            return "The sum is positive or 0: " + sum;
         } else {
-            return "The sum is negative";
+            return "The sum is negative: " + sum;
         }
     }
 
