@@ -2,6 +2,9 @@ package com.tulainov.homeworks.homework06;
 
 import java.util.Scanner;
 
+// TODO: I need to learn how we can make tests with methods, where everything works with Scanner.
+// TODO: also learn how to test the 'void' methods. And after I learn it, add these test methods in this Homework.
+
 public class HomeworkApp {
 
     public static void main(String[] args) {
