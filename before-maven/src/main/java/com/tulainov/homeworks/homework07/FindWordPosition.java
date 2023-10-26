@@ -4,7 +4,7 @@ public class FindWordPosition {
 
     public static String findWordPosition(String source, String target) {
 
-        int index = 0;
+        int index;
 
         if (source.contains(target)) {
             index = source.indexOf(target);
