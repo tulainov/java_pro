@@ -57,9 +57,14 @@ public class GuessWord {
 
         while(true) {
 
-            System.out.println("Answer: ");
+            System.out.println("Answer (type '?' if you want to see the list again): ");
 
             answerWord = scanner.nextLine();
+
+            if (answerWord.equals("?")) {
+                printingAnArray();
+                continue;
+            }
 
             if (answerWord.equals(wantedWord)) {
                 System.out.println("You won! Congratulations!");
