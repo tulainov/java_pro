@@ -1,4 +1,4 @@
-package com.tulainov.homeworks.homework07;
+package com.tulainov.homeworks.homework07.strings_tasks;
 
 public class Palindrome {
 

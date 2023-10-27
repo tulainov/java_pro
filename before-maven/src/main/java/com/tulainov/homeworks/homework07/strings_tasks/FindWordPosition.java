@@ -1,4 +1,4 @@
-package com.tulainov.homeworks.homework07;
+package com.tulainov.homeworks.homework07.strings_tasks;
 
 public class FindWordPosition {
 
@@ -12,7 +12,7 @@ public class FindWordPosition {
             index = -1;
         }
 
-        return "Result: " + index;
+        return "The wanted substring begins with index: " + index;
     }
 
 }

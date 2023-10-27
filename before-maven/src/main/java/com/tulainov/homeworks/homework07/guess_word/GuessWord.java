@@ -1,13 +1,7 @@
-package com.tulainov.homeworks.homework07;
+package com.tulainov.homeworks.homework07.guess_word;
 
-/*
-        print array() -> choosing the word() -->
-
-        getting the word from user() -> printing hashes() -->
-
-        everything together()
- */
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -22,7 +16,7 @@ public class GuessWord {
             "leak", "kiwi", "mango", "mushroom", "nut", "olive", "pea",
             "peanut", "pear", "pepper", "pineapple", "pumpkin", "potato"};
 
-    public static void printingAnArray() {
+    protected static void printingAnArray() {
 
         String[][] wordsMatrix = new String[5][5];
 
@@ -42,7 +36,7 @@ public class GuessWord {
         }
     }
 
-    public static void setWantedWord() {
+    protected static void setWantedWord() {
 
         Random random = new Random();
 
@@ -55,7 +49,7 @@ public class GuessWord {
         }
     }
 
-    private static void checkingUserAnswer() {
+    protected static void checkingUserAnswer() {
 
         setWantedWord();
         System.out.println("Choose the word from the list:");
@@ -69,6 +63,7 @@ public class GuessWord {
 
             if (answerWord.equals(wantedWord)) {
                 System.out.println("You won! Congratulations!");
+                System.out.println("The word " + getWantedWord() + " is correct!");
                 break;
             } else {
                 printHashes();
@@ -77,12 +72,33 @@ public class GuessWord {
         }
     }
 
-    private static void printHashes() {
+    protected static void printHashes() {
 
+        List<String> hashes = new ArrayList<>();
 
+        for (int i = 0; i <= 14; i++) {
+            hashes.add("*");
+        }
+
+        for (int i = 0; i < Math.min(wantedWord.length(), answerWord.length()); i++) {
+            if (wantedWord.charAt(i) == answerWord.charAt(i)) {
+                hashes.set(i, String.valueOf(wantedWord.charAt(i)));
+
+            } else {
+                System.out.println("Try again. You can do it!");
+                break;
+            }
+        }
+
+        System.out.println("That's what we've got");
+
+        for (String string : hashes) {
+            System.out.print(string);
+        }
+        System.out.println();
     }
 
-    public static String getWantedWord() {
+    protected static String getWantedWord() {
         return wantedWord;
     }
 }

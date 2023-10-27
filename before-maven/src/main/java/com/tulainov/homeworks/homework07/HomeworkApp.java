@@ -1,5 +1,11 @@
 package com.tulainov.homeworks.homework07;
 
+import com.tulainov.homeworks.homework07.guess_word.StartingGame;
+import com.tulainov.homeworks.homework07.strings_tasks.FindSymbolOccurrence;
+import com.tulainov.homeworks.homework07.strings_tasks.FindWordPosition;
+import com.tulainov.homeworks.homework07.strings_tasks.Palindrome;
+import com.tulainov.homeworks.homework07.strings_tasks.StringReverse;
+
 import java.util.Scanner;
 
 public class HomeworkApp {
@@ -8,14 +14,41 @@ public class HomeworkApp {
 
     public static void startHomework() {
 
-//        System.out.println("First");
-//        symbolOccurrence();
-//        System.out.println("Second");
-//        findWordPosition();
-//        System.out.println("Third");
-//        stringReversed();
-        System.out.println("Fourth");
-        isPalindrome();
+        String userAnswer = "";
+
+        System.out.println("""
+                Welcome to Homework 7!
+                I learn strings here and I'm happy to see you here.
+                
+                Just pick a number and have fun!
+                """);
+
+
+        while (!(userAnswer.equals("quit"))) {
+
+
+
+            System.out.println("""
+                1 - Find a symbol in string line
+                2 - Find a substring in line
+                3 - Type a string and let's see it reversed
+                4 - Type something and let's check if it's a palindrome
+                5 - Guess Word Game
+                quit - finish homework 7
+                    """);
+
+            userAnswer = scanner.nextLine();
+
+            switch (userAnswer) {
+                case "1" -> symbolOccurrence();
+                case "2" -> findWordPosition();
+                case "3" -> stringReversed();
+                case "4" -> isPalindrome();
+                case "5" -> StartingGame.startGame();
+            }
+        }
+
+        System.out.println("Thank you! Have a great day!");
     }
 
     private static void symbolOccurrence() {
