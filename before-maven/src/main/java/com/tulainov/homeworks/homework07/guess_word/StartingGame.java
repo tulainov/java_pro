@@ -6,8 +6,8 @@ public class StartingGame {
 
         System.out.println("Welcome to the Guess Word Game");
         System.out.println("""
-                Let me explain you the rules. You have a list of words - 
-                one of these words I will pick and you'll have to guess 
+                Let me explain you the rules. You have a list of words -
+                one of these words I will pick and you'll have to guess
                 which word I picked.
                 Let's begin.
                 """);
